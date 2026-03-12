@@ -2,7 +2,7 @@
 # ║  🌀 NEXUS PORTAL SERÜVENİ — CEVAP KARTI                  ║
 # ║                                                            ║
 # ║  Her portalın cevabını ilgili anahtara yaz.                ║
-# ║  Sonra kaydet, commit et ve push yap!                      ║
+# ║  Sonra Commit changes butonuna tıkla!                       ║
 # ║                                                            ║
 # ║  ⚠️  Sadece "" kısımlarını değiştir!                       ║
 # ║  ⚠️  Tırnak işaretlerini silme!                            ║

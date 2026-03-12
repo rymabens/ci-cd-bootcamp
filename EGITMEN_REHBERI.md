@@ -6,13 +6,13 @@ Bu bootcamp, CI/CD kavramlarını **sıfır kodlama gerektiren** bir portal
 macerası oyunuyla öğretir. Katılımcılar 10 farklı bulmacayı (ters yazı,
 matris, binary, gizli dosya, koordinat, Sezar şifresi, akrostiş, Mors kodu,
 mantık ve meta-bulmaca) çözer ve cevaplarını basit bir dosyaya yazar.
-Her `git push` otomatik testleri tetikler. Tüm cevaplar doğru olduğunda
+Her commit otomatik testleri tetikler. Tüm cevaplar doğru olduğunda
 site otomatik deploy olur.
 
 **Neden bu format?**
 - Kod yazmak bilmeyenler de katılabilir (sadece bulmaca çöz + cevap yaz)
 - Yapay zekaya yapıştırarak çözmek zor (gizli dosya, repo keşfi, matris)
-- CI/CD döngüsünü gerçekten deneyimliyorlar (push → test → deploy)
+- CI/CD döngüsünü gerçekten deneyimliyorlar (commit → test → deploy)
 - Hikaye ve rekabet motivasyonu yüksek tutuyor
 
 ## Cevap Anahtarı (Sadece Eğitmen İçin!)
@@ -56,11 +56,8 @@ Son reveal: "Kübra'nın aradığı yeni NEXUS'lular... SİZSİNİZ!"
 4. Kendiniz fork edip tüm akışı test edin
 
 ### Katılımcılara Gönderin
-- GitHub hesabı açsınlar
-- Git kurulumu: https://git-scm.com
-- Python 3.12+: https://python.org
-- VS Code (veya herhangi bir editör)
-- **GitHub Desktop** (terminal kullanmak istemeyenler için alternatif)
+- GitHub hesabı açsınlar (https://github.com)
+- Tarayıcıdan çalışacaklar, başka kurulum gerekmez!
 
 ## Bootcamp Planı (~90 dk)
 
@@ -70,20 +67,20 @@ Son reveal: "Kübra'nın aradığı yeni NEXUS'lular... SİZSİNİZ!"
 |------|----------|
 | 00-10 | **CI/CD Nedir?** Günlük hayattan benzetme: "Yemek tarifi yazdın, her değişiklikte otomatik tadım yapılıyor. Lezzetliyse otomatik servise çıkıyor." |
 | 10-18 | **Canlı Demo:** Template repo'yu göster, bilerek yanlış cevap yaz, push et, pipeline'ın KIRMIZI olduğunu göster. Sonra doğru cevabı yaz, YEŞİL pipeline + deploy |
-| 18-25 | **Herkes Fork Etsin:** Adım adım ekranı paylaşarak fork → clone → pip install |
-| 25-30 | **İlk Portal Birlikte:** Portal 1'i birlikte açın, çözün, cevaplar.py'ye yazın, birlikte push edin |
+| 18-25 | **Herkes Fork Etsin:** Adım adım ekranı paylaşarak fork → Settings → Pages → GitHub Actions |
+| 25-30 | **İlk Portal Birlikte:** Portal 1'i birlikte açın, çözün, cevaplar.py'yi ✏️ ile düzenleyin, Commit changes |
 
 ### 🕐 Bölüm 2 — Portal Çözme (45 dk)
 
 | Süre | Aktivite |
 |------|----------|
-| 00-05 | **Kurallar:** Her portal bağımsız, istediğinden başla. Her push'ta Actions'ı kontrol et |
+| 00-05 | **Kurallar:** Her portal bağımsız, istediğinden başla. Her commit'te Actions sekmesini kontrol et |
 | 05-40 | **Serbest Çalışma:** Katılımcılar kendi hızlarında çözer |
 | 40-45 | **Durum Kontrolü:** Kim kaçıncı portalda? Scoreboard güncelleme |
 
 **Eğitmen Stratejisi:**
 - Sınıfta dolaşın, tıkananlara ipucu verin (çözümü DEĞİL!)
-- 10. dakikada: "Portal 4'te gizli dosyayı `ls -a` ile bulabilirsiniz" genel ipucu
+- 10. dakikada: "Portal 4'te `vakalar/` klasörüne dikkatli bakın, nokta ile başlayan dosyalar var" genel ipucu
 - 20. dakikada: Binary çözme için tahtaya örnek adım yazın
 - Hızlı çözenleri yavaş olanlara eşleyin (pair çalışma)
 - **Canlı scoreboard** tutun (aşağıdaki şablona bakın)
@@ -98,7 +95,7 @@ Son reveal: "Kübra'nın aradığı yeni NEXUS'lular... SİZSİNİZ!"
 
 | Süre | Aktivite |
 |------|----------|
-| 00-05 | **GitHub Pages Kurulumu:** Birlikte Settings → Pages → GitHub Actions |
+| 00-05 | **GitHub Pages Kontrolü:** Pages zaten Bölüm 1'de kuruldu, deploy durumunu kontrol edin |
 | 05-10 | **İlk Deploy!** Tüm portalları çözmüş birinin sitesini canlı gösterin |
 | 10-15 | **Kapanış:** Deploy URL'lerini paylaşın, NEXUS'a hoş geldiniz! |
 
@@ -107,11 +104,11 @@ Son reveal: "Kübra'nın aradığı yeni NEXUS'lular... SİZSİNİZ!"
 | Sorun | Çözüm |
 |-------|-------|
 | Fork edemiyor | Email doğrulaması gerekli olabilir |
-| `pip install` hata veriyor | `python --version` kontrol (3.12+ olmalı) |
-| Push yapamıyor | GitHub credential/token ayarı gerekli |
+| Dosya düzenlenemiyor | Fork ettiğinden emin olsun, orijinal repoda düzenleme yapılamaz |
+| Commit yapamıyor | GitHub hesabında email doğrulaması gerekli olabilir |
 | Actions çalışmıyor | Settings → Actions → "Allow all" kontrol |
 | Pages deploy olmuyor | Settings → Pages → Source: "GitHub Actions" seçili mi? |
-| Portal 4: Gizli dosyayı bulamıyor | `ls -a vakalar/` veya GitHub'da klasöre tıkla |
+| Portal 4: Gizli dosyayı bulamıyor | GitHub'da `vakalar/` klasörüne tıkla, nokta ile başlayan dosyaya dikkat |
 | Türkçe karakter sorunu | Test normalizer var, büyük/küçük + Türkçe fark etmez |
 
 ## Canlı Scoreboard Şablonu

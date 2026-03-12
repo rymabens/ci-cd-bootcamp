@@ -8,30 +8,22 @@
 ```
 
 Kübra, bu portalın anahtarını **gizli bir dosyanın** içine sakladı.
-Dosya bu projenin içinde bir yerlerde... ama normal bakınca göremezsin!
+Dosya bu projenin içinde bir yerlerde... ama dikkatli bakmazsan göremezsin!
 
 ---
 
 ## Bilgi: Gizli Dosyalar
 
-Linux ve macOS'ta, dosya adı **nokta (.) ile başlıyorsa** dosya
-"gizli" sayılır. Normal `ls` komutuyla görünmez!
-
-```bash
-# Normal listeleme — gizli dosyalar GÖRÜNMEZ:
-ls vakalar/
-
-# Gizli dosyaları da gösteren listeleme:
-ls -a vakalar/
-```
-
-GitHub'da da klasöre tıkladığında gizli dosyalar listelenir,
-dikkatli bak!
+Yazılım dünyasında, dosya adı **nokta (.) ile başlıyorsa** dosya
+"gizli" sayılır. Bu dosyalar genellikle göz ardı edilir ama
+GitHub'da `vakalar/` klasörüne tıkladığında aslında listelenirler —
+**dikkatli bakarsan** fark edebilirsin!
 
 ## Görev
 
-`vakalar/` klasöründe **gizli bir dosya** var. Onu bul ve içindeki
-**Portal Anahtarı**'nı oku.
+GitHub'da `vakalar/` klasörüne git ve dosya listesine **çok dikkatli** bak.
+Orada sıradan portal dosyalarından farklı görünen bir dosya var.
+Onu bul ve içindeki **Portal Anahtarı**'nı oku.
 
 > İpucu: Dosya adı `.` ile başlıyor ve Kübra'nın adını içeriyor.
 

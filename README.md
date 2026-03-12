@@ -19,7 +19,7 @@ Her portalı geçenler NEXUS'un yeni üyeleri olmaya hak kazanır!
 ## 🚀 Nasıl Çalışır?
 
 ```
-Portalı aç → Bulmacayı çöz → Cevabı yaz → git push → Test otomatik çalışır → Tümü doğruysa site deploy olur!
+Portalı aç → Bulmacayı çöz → Cevabı yaz → Commit et → Test otomatik çalışır → Tümü doğruysa site deploy olur!
 ```
 
 ## 📋 Hızlı Başlangıç
@@ -27,33 +27,22 @@ Portalı aç → Bulmacayı çöz → Cevabı yaz → git push → Test otomatik
 ### 1. Fork Et
 Bu sayfanın sağ üstündeki **Fork** butonuna tıkla.
 
-### 2. Klonla
-```bash
-git clone https://github.com/SENIN-ADIN/bootcamp.git
-cd bootcamp
-```
+### 2. GitHub Pages'ı Etkinleştir
+Kendi fork'unda **Settings → Pages → Source → GitHub Actions** seç.
 
-### 3. Bağımlılıkları Yükle
-```bash
-pip install -r requirements.txt
-```
+### 3. İlk Portalı Aç
+`vakalar/` klasörüne git ve `vaka-01.md` dosyasına tıkla.
 
-### 4. İlk Portalı Aç
-```bash
-# vakalar/vaka-01.md dosyasını oku (veya GitHub'da aç)
-```
+### 4. Bulmacayı Çöz
+Portaldaki bulmacayı oku ve cevabı bul.
 
 ### 5. Cevabını Yaz
-`cevaplar.py` dosyasını aç, ilgili satıra cevabını yaz.
+Ana sayfaya dön, `cevaplar.py` dosyasına tıkla, sağ üstteki **kalem (✏️) ikonuna** bas.
+İlgili satıra cevabını yaz, ardından **Commit changes** butonuna tıkla.
 
-### 6. Test Et ve Push Et
-```bash
-pytest --verbose -s                                    # yerelde kontrol et
-git add cevaplar.py && git commit -m "Portal 1" && git push  # gönder!
-```
-
-### 7. GitHub Pages'ı Etkinleştir
-**Settings → Pages → Source → GitHub Actions** seç.
+### 6. Sonucu Kontrol Et
+**Actions** sekmesine git ve testlerin sonucunu kontrol et.
+Yeşil ✅ = doğru, Kırmızı ❌ = tekrar dene!
 
 ## 🌀 Portallar
 
@@ -79,9 +68,9 @@ git add cevaplar.py && git commit -m "Portal 1" && git push  # gönder!
 │                                                         │
 │   1. vakalar/ klasöründen bir portal seç                │
 │   2. Bulmacayı oku ve çöz                               │
-│   3. cevaplar.py dosyasına cevabını yaz                 │
-│   4. git add cevaplar.py && git commit && git push      │
-│   5. GitHub Actions sekmesinden sonucu kontrol et       │
+│   3. cevaplar.py dosyasını ✏️ ile düzenle               │
+│   4. Commit changes butonuna tıkla                      │
+│   5. Actions sekmesinden sonucu kontrol et              │
 │   6. Sonraki portala geç!                               │
 │                                                         │
 └─────────────────────────────────────────────────────────┘

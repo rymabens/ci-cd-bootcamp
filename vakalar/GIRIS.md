@@ -31,9 +31,9 @@ NEXUS topluluğunun yeni üyeleri olmaya hak kazanır.
 
 **Senin görevin:**
 1. `vakalar/` klasöründeki her portalı aç ve bulmacayı çöz
-2. Bulduğun cevabı `cevaplar.py` dosyasına yaz
-3. `git add cevaplar.py && git commit -m "Portal X" && git push`
-4. GitHub Actions sekmesinden sonucu kontrol et
+2. `cevaplar.py` dosyasını GitHub'da ✏️ (kalem) ikonuyla düzenle ve cevabını yaz
+3. **Commit changes** butonuna tıklayarak kaydet
+4. **Actions** sekmesinden sonucu kontrol et
 5. Tüm portallar açıldığında Kübra'nın gizli mesajı ortaya çıkar ve siten deploy olur!
 
 ---
