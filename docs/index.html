@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🔍 Kayıp Yazılımcının Şifresi — Çözüldü!</title>
+  <title>🌀 NEXUS Portal Serüveni — Tamamlandı!</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap');
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -19,9 +19,11 @@
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
       background-image:
-        linear-gradient(rgba(0, 255, 136, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 255, 136, 0.03) 1px, transparent 1px);
-      background-size: 50px 50px;
+        radial-gradient(circle at 20% 50%, rgba(138, 43, 226, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(0, 200, 255, 0.08) 0%, transparent 50%),
+        linear-gradient(rgba(138, 43, 226, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(138, 43, 226, 0.03) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 50px 50px, 50px 50px;
       z-index: 0;
     }
     .container { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; padding: 40px 20px; }
@@ -29,77 +31,77 @@
     .header { text-align: center; margin-bottom: 40px; }
     .badge {
       display: inline-block;
-      background: linear-gradient(135deg, #00ff88, #00cc6a);
-      color: #0a0e17; font-weight: 700; font-size: 0.75rem;
+      background: linear-gradient(135deg, #8a2be2, #00c8ff);
+      color: #fff; font-weight: 700; font-size: 0.75rem;
       padding: 6px 16px; border-radius: 20px; text-transform: uppercase;
       letter-spacing: 2px; margin-bottom: 20px;
       animation: pulse 2s infinite;
     }
     @keyframes pulse {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.4); }
-      50% { box-shadow: 0 0 20px 5px rgba(0, 255, 136, 0.2); }
+      0%, 100% { box-shadow: 0 0 0 0 rgba(138, 43, 226, 0.4); }
+      50% { box-shadow: 0 0 20px 5px rgba(138, 43, 226, 0.2); }
     }
     .title {
       font-size: 2.5rem; font-weight: 700;
-      background: linear-gradient(135deg, #00ff88, #00aaff);
+      background: linear-gradient(135deg, #8a2be2, #00c8ff);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent;
       background-clip: text; margin-bottom: 10px;
     }
     .subtitle { color: #7a8ba5; font-size: 1.1rem; }
 
-    /* Case grid */
-    .cases-grid {
+    /* Portal grid */
+    .portals-grid {
       display: grid; grid-template-columns: repeat(5, 1fr);
       gap: 10px; margin: 30px 0;
     }
-    .case-card {
-      background: rgba(0, 255, 136, 0.05);
-      border: 1px solid rgba(0, 255, 136, 0.2);
+    .portal-card {
+      background: rgba(138, 43, 226, 0.05);
+      border: 1px solid rgba(138, 43, 226, 0.2);
       border-radius: 10px; padding: 14px 8px; text-align: center;
       animation: fadeInUp 0.5s ease forwards; opacity: 0;
     }
-    .case-card:nth-child(1)  { animation-delay: 0.1s; }
-    .case-card:nth-child(2)  { animation-delay: 0.2s; }
-    .case-card:nth-child(3)  { animation-delay: 0.3s; }
-    .case-card:nth-child(4)  { animation-delay: 0.4s; }
-    .case-card:nth-child(5)  { animation-delay: 0.5s; }
-    .case-card:nth-child(6)  { animation-delay: 0.6s; }
-    .case-card:nth-child(7)  { animation-delay: 0.7s; }
-    .case-card:nth-child(8)  { animation-delay: 0.8s; }
-    .case-card:nth-child(9)  { animation-delay: 0.9s; }
-    .case-card:nth-child(10) { animation-delay: 1.0s; }
+    .portal-card:nth-child(1)  { animation-delay: 0.1s; }
+    .portal-card:nth-child(2)  { animation-delay: 0.2s; }
+    .portal-card:nth-child(3)  { animation-delay: 0.3s; }
+    .portal-card:nth-child(4)  { animation-delay: 0.4s; }
+    .portal-card:nth-child(5)  { animation-delay: 0.5s; }
+    .portal-card:nth-child(6)  { animation-delay: 0.6s; }
+    .portal-card:nth-child(7)  { animation-delay: 0.7s; }
+    .portal-card:nth-child(8)  { animation-delay: 0.8s; }
+    .portal-card:nth-child(9)  { animation-delay: 0.9s; }
+    .portal-card:nth-child(10) { animation-delay: 1.0s; }
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(20px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-    .case-num { font-size: 0.65rem; color: #00ff88; font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; }
-    .case-icon { font-size: 1.4rem; margin: 6px 0; }
-    .case-answer { font-size: 0.7rem; color: #7a8ba5; font-family: 'JetBrains Mono', monospace; }
-    .case-word { font-size: 0.85rem; font-weight: 700; color: #fff; margin-top: 4px; }
+    .portal-num { font-size: 0.65rem; color: #8a2be2; font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; }
+    .portal-icon { font-size: 1.4rem; margin: 6px 0; }
+    .portal-answer { font-size: 0.7rem; color: #7a8ba5; font-family: 'JetBrains Mono', monospace; }
+    .portal-word { font-size: 0.85rem; font-weight: 700; color: #fff; margin-top: 4px; }
 
     /* Message box */
     .message-box {
-      background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 170, 255, 0.1));
-      border: 2px solid rgba(0, 255, 136, 0.3); border-radius: 16px;
+      background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(0, 200, 255, 0.1));
+      border: 2px solid rgba(138, 43, 226, 0.3); border-radius: 16px;
       padding: 40px; text-align: center; margin: 30px 0;
       animation: glowBox 3s infinite;
     }
     @keyframes glowBox {
-      0%, 100% { box-shadow: 0 0 20px rgba(0, 255, 136, 0.1); }
-      50% { box-shadow: 0 0 40px rgba(0, 255, 136, 0.2); }
+      0%, 100% { box-shadow: 0 0 20px rgba(138, 43, 226, 0.1); }
+      50% { box-shadow: 0 0 40px rgba(138, 43, 226, 0.2); }
     }
-    .message-label { font-size: 0.8rem; color: #00ff88; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 16px; }
+    .message-label { font-size: 0.8rem; color: #8a2be2; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 16px; }
     .message-text { font-size: 1.8rem; font-weight: 700; color: #fff; line-height: 1.4; font-style: italic; }
     .message-author { margin-top: 16px; color: #7a8ba5; font-size: 0.95rem; }
 
     /* Identity reveal */
     .identity-box {
-      background: rgba(255, 215, 0, 0.08);
-      border: 1px solid rgba(255, 215, 0, 0.25);
+      background: rgba(0, 200, 255, 0.08);
+      border: 1px solid rgba(0, 200, 255, 0.25);
       border-radius: 12px; padding: 24px; text-align: center; margin: 20px 0;
     }
-    .identity-label { font-size: 0.7rem; color: #ffd700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
-    .identity-text { font-size: 1.6rem; font-weight: 700; color: #ffd700; }
+    .identity-label { font-size: 0.7rem; color: #00c8ff; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
+    .identity-text { font-size: 1.6rem; font-weight: 700; color: #00c8ff; }
 
     /* Pipeline */
     .pipeline {
@@ -124,7 +126,7 @@
     @media (max-width: 600px) {
       .title { font-size: 1.6rem; }
       .message-text { font-size: 1.2rem; }
-      .cases-grid { grid-template-columns: repeat(2, 1fr); }
+      .portals-grid { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
@@ -133,9 +135,9 @@
 
 <div class="container">
   <div class="header">
-    <div class="badge">✅ Dava Kapatıldı</div>
-    <h1 class="title">Kayıp Yazılımcının Şifresi</h1>
-    <p class="subtitle">Tüm vakalar çözüldü. Ada'nın gizli mesajı açığa çıktı.</p>
+    <div class="badge">🌀 Tüm Portallar Açıldı</div>
+    <h1 class="title">NEXUS Portal Serüveni</h1>
+    <p class="subtitle">10 portalın tamamı geçildi. Kübra'nın gizli mesajı açığa çıktı.</p>
   </div>
 
   <div class="pipeline">
@@ -147,93 +149,93 @@
       <span>📦</span> <span class="label">Bağımlılıklar yüklendi</span> <span class="status">✓ başarılı</span>
     </div>
     <div class="pipeline-step">
-      <span>🧪</span> <span class="label">10/10 vaka doğrulandı</span> <span class="status">✓ başarılı</span>
+      <span>🧪</span> <span class="label">10/10 portal doğrulandı</span> <span class="status">✓ başarılı</span>
     </div>
     <div class="pipeline-step">
       <span>🚀</span> <span class="label">GitHub Pages'a deploy edildi</span> <span class="status">✓ başarılı</span>
     </div>
   </div>
 
-  <div class="cases-grid">
-    <div class="case-card">
-      <div class="case-num">VAKA 01</div>
-      <div class="case-icon">🪞</div>
-      <div class="case-answer">MERHABA</div>
-      <div class="case-word">Kodlamak</div>
+  <div class="portals-grid">
+    <div class="portal-card">
+      <div class="portal-num">PORTAL 01</div>
+      <div class="portal-icon">🪞</div>
+      <div class="portal-answer">MERHABA</div>
+      <div class="portal-word">Her</div>
     </div>
-    <div class="case-card">
-      <div class="case-num">VAKA 02</div>
-      <div class="case-icon">🔢</div>
-      <div class="case-answer">ADA</div>
-      <div class="case-word">bir</div>
+    <div class="portal-card">
+      <div class="portal-num">PORTAL 02</div>
+      <div class="portal-icon">🔢</div>
+      <div class="portal-answer">ALKÜ</div>
+      <div class="portal-word">büyük</div>
     </div>
-    <div class="case-card">
-      <div class="case-num">VAKA 03</div>
-      <div class="case-icon">🏛️</div>
-      <div class="case-answer">GITHUB</div>
-      <div class="case-word">süper</div>
+    <div class="portal-card">
+      <div class="portal-num">PORTAL 03</div>
+      <div class="portal-icon">💻</div>
+      <div class="portal-answer">CESARET</div>
+      <div class="portal-word">yolculuk</div>
     </div>
-    <div class="case-card">
-      <div class="case-num">VAKA 04</div>
-      <div class="case-icon">👁️</div>
-      <div class="case-answer">LIMAN</div>
-      <div class="case-word">güç</div>
+    <div class="portal-card">
+      <div class="portal-num">PORTAL 04</div>
+      <div class="portal-icon">👁️</div>
+      <div class="portal-answer">EVREN</div>
+      <div class="portal-word">küçük</div>
     </div>
-    <div class="case-card">
-      <div class="case-num">VAKA 05</div>
-      <div class="case-icon">🕵️</div>
-      <div class="case-answer">DEFNE</div>
-      <div class="case-word">değil</div>
+    <div class="portal-card">
+      <div class="portal-num">PORTAL 05</div>
+      <div class="portal-icon">🗺️</div>
+      <div class="portal-answer">ROTA</div>
+      <div class="portal-word">bir</div>
     </div>
-    <div class="case-card">
-      <div class="case-num">VAKA 06</div>
-      <div class="case-icon">💻</div>
-      <div class="case-answer">BULUT</div>
-      <div class="case-word">ama</div>
+    <div class="portal-card">
+      <div class="portal-num">PORTAL 06</div>
+      <div class="portal-icon">🏛️</div>
+      <div class="portal-answer">ANAHTAR</div>
+      <div class="portal-word">adımla</div>
     </div>
-    <div class="case-card">
-      <div class="case-num">VAKA 07</div>
-      <div class="case-icon">📝</div>
-      <div class="case-answer">YAZILIM</div>
-      <div class="case-word">en</div>
+    <div class="portal-card">
+      <div class="portal-num">PORTAL 07</div>
+      <div class="portal-icon">📝</div>
+      <div class="portal-answer">LABİRENT</div>
+      <div class="portal-word">başlar</div>
     </div>
-    <div class="case-card">
-      <div class="case-num">VAKA 08</div>
-      <div class="case-icon">🗺️</div>
-      <div class="case-answer">SİFRE</div>
-      <div class="case-word">yakın</div>
+    <div class="portal-card">
+      <div class="portal-num">PORTAL 08</div>
+      <div class="portal-icon">📡</div>
+      <div class="portal-answer">ARAYIŞ</div>
+      <div class="portal-word">NEXUS</div>
     </div>
-    <div class="case-card">
-      <div class="case-num">VAKA 09</div>
-      <div class="case-icon">📡</div>
-      <div class="case-answer">HAZIR</div>
-      <div class="case-word">şey</div>
+    <div class="portal-card">
+      <div class="portal-num">PORTAL 09</div>
+      <div class="portal-icon">🧠</div>
+      <div class="portal-answer">REHBER</div>
+      <div class="portal-word">seninle</div>
     </div>
-    <div class="case-card">
-      <div class="case-num">VAKA 10</div>
-      <div class="case-icon">🔐</div>
-      <div class="case-answer">MÜHENDİS</div>
-      <div class="case-word">odur</div>
+    <div class="portal-card">
+      <div class="portal-num">PORTAL 10</div>
+      <div class="portal-icon">🌀</div>
+      <div class="portal-answer">MACERALAR</div>
+      <div class="portal-word">büyür</div>
     </div>
   </div>
 
   <div class="message-box">
-    <div class="message-label">🔓 Ada'nın Gizli Mesajı</div>
+    <div class="message-label">🔓 Kübra'nın Gizli Mesajı</div>
     <div class="message-text">
-      "Kodlamak bir süper güç değil,<br>ama en yakın şey odur."
+      "Her büyük yolculuk küçük bir adımla başlar,<br>NEXUS seninle büyür."
     </div>
-    <div class="message-author">— Ada, Kayıp Yazılımcı</div>
+    <div class="message-author">— Kübra, NEXUS Mühendisi @ ALKÜ</div>
   </div>
 
   <div class="identity-box">
-    <div class="identity-label">🏅 Ada'nın Gerçek Kimliği</div>
-    <div class="identity-text">M Ü H E N D İ S</div>
+    <div class="identity-label">🌟 Kübra'nın Aradığı Yeni NEXUS'lular</div>
+    <div class="identity-text">SİZSİNİZ!</div>
   </div>
 
   <div class="footer">
     <p>Bu sayfa <strong>GitHub Actions</strong> tarafından otomatik deploy edildi.</p>
-    <p style="margin-top: 8px;">10 vaka çözüldü → Pipeline yeşil → Sayfa yayında 🚀</p>
-    <p style="margin-top: 16px;">CI/CD Bootcamp • 2026</p>
+    <p style="margin-top: 8px;">10 portal açıldı → Pipeline yeşil → Sayfa yayında 🚀</p>
+    <p style="margin-top: 16px;">ALKÜ × NEXUS • CI/CD Bootcamp • 2026</p>
   </div>
 </div>
 
@@ -242,7 +244,7 @@
   const ctx = canvas.getContext('2d');
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
-  const colors = ['#00ff88','#00aaff','#ff6b6b','#ffd93d','#6c5ce7','#ffffff'];
+  const colors = ['#8a2be2','#00c8ff','#ff6b6b','#ffd93d','#00ff88','#ffffff'];
   const particles = [];
   for (let i = 0; i < 120; i++) {
     particles.push({

@@ -1,46 +1,40 @@
-# 📁 Vaka 4 — Görünmez Dosya
+# 🌀 Portal 4 — Gizli Portal
 
 ```
-Zorluk: ⭐⭐ (Orta)
-Tür:    Dosya sistemi keşfi
+╔════════════════════════════════════════╗
+║  NEXUS Portal Sistemi — Portal 4/10   ║
+║  Tür: Dosya Keşfi                     ║
+╚════════════════════════════════════════╝
 ```
+
+Kübra, bu portalın anahtarını **gizli bir dosyanın** içine sakladı.
+Dosya bu projenin içinde bir yerlerde... ama normal bakınca göremezsin!
 
 ---
 
-## 📋 Olay
+## Bilgi: Gizli Dosyalar
 
-Ada'nın iş arkadaşı şunu söyledi:
+Linux ve macOS'ta, dosya adı **nokta (.) ile başlıyorsa** dosya
+"gizli" sayılır. Normal `ls` komutuyla görünmez!
 
-> *"Ada ayrılmadan önce bir dosya gizledi. Normal bakınca göremezsin.
-> 'Nokta ile başlayan dosyalar gizlidir' derdi hep."*
-
-## 🔎 Kanıt
-
-Ada'nın gizli bir dosya bıraktığı biliniyor. Bu dosya projenin
-içinde **bir yerlerde** gizli. Normal dosya listesinde görünmüyor.
-
-### Bilmen Gereken
-
-Linux/Mac ve Git dünyasında, adı **nokta (.) ile başlayan** dosyalar
-"gizli dosya" sayılır ve normal `ls` komutuyla görünmez.
-
-Gizli dosyaları görmek için:
 ```bash
-ls -a
+# Normal listeleme — gizli dosyalar GÖRÜNMEZ:
+ls vakalar/
+
+# Gizli dosyaları da gösteren listeleme:
+ls -a vakalar/
 ```
 
-Veya GitHub'da bir klasöre girdiğinde gizli dosyalar da listelenir.
+GitHub'da da klasöre tıkladığında gizli dosyalar listelenir,
+dikkatli bak!
 
-## 📝 Görev
+## Görev
 
-1. Projenin içindeki gizli dosyayı bul
-2. Dosyayı aç ve içindeki cevabı oku
-3. Cevabı `cevaplar.py` dosyasına yaz
+`vakalar/` klasöründe **gizli bir dosya** var. Onu bul ve içindeki
+**Portal Anahtarı**'nı oku.
 
-> **İpucu:** `vakalar` klasörünün içine dikkatli bak.
-> `ls -a vakalar/` komutu işine yarayabilir.
-> Ya da GitHub'da `vakalar/` klasörüne tıkla — gizli dosyalar da görünür.
+> İpucu: Dosya adı `.` ile başlıyor ve Kübra'nın adını içeriyor.
 
-## ✏️ Cevabını Yaz
+---
 
-`cevaplar.py` dosyasını aç ve `vaka4` satırına dosyanın içinde bulduğun cevabı yaz.
+Cevabını `cevaplar.py` dosyasındaki `"vaka4"` anahtarına yaz.

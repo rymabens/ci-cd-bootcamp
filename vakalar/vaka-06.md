@@ -1,65 +1,66 @@
-# 📁 Vaka 6 — Makinelerin Dili
+# 🌀 Portal 6 — Sezar'ın Portalı
 
 ```
-Zorluk: ⭐⭐⭐ (Zor)
-Tür:    İkili (binary) kod çözme
+╔════════════════════════════════════════╗
+║  NEXUS Portal Sistemi — Portal 6/10   ║
+║  Tür: Sezar Şifresi                   ║
+╚════════════════════════════════════════╝
 ```
+
+Kübra, bu portalın anahtarını **Sezar şifresi** ile korumuş.
+Julius Sezar'ın 2000 yıl önce kullandığı bu şifreleme yöntemini
+çözebilir misin?
 
 ---
 
-## 📋 Olay
+## Sezar Şifresi Nedir?
 
-Ada'nın monitöründe garip bir sayı dizisi bulundu. Sadece 0 ve 1'lerden
-oluşuyor. Bu, bilgisayarların konuştuğu dil: **ikili (binary) sistem**.
+Her harf, alfabede **belirli bir sayı kadar kaydırılır**.
 
-## 🔎 Kanıt
-
-### Binary Nasıl Çalışır?
-
-Bilgisayarlar her harfi 8 basamaklı bir 0-1 dizisi (byte) olarak saklar.
-
+Örnek — 3 harf ileri kaydırma:
 ```
-Harf → Sayı (ASCII) → Binary
-──────────────────────────────
- A   →   65         → 01000001
- B   →   66         → 01000010
- C   →   67         → 01000011
- ...
+Orijinal:   A  B  C  D  E  F  G  ...
+Şifreli:    D  E  F  G  H  I  J  ...
 ```
 
-### Çeviri Tablosu (lazım olacak harfler):
+Yani `A → D`, `B → E`, `C → F` olur.
+
+**Çözmek için:** Her harfi aynı sayı kadar **geri** kaydır!
+
+## Şifreli Mesaj
+
+Kübra'nın notu: *"Her harfi 3 geri kaydır."*
 
 ```
-01000010 = B          01001111 = O
-01000011 = C          01010000 = P
-01000100 = D          01010010 = R
-01000101 = E          01010011 = S
-01001000 = H          01010100 = T
-01001001 = I          01010101 = U
-01001011 = K          01010110 = V
-01001100 = L          01011001 = Y
-01001101 = M          01011010 = Z
-01001110 = N
+╔══════════════════════════════════════╗
+║                                      ║
+║       D  Q  D  K  W  D  U            ║
+║                                      ║
+╚══════════════════════════════════════╝
 ```
 
-### Ada'nın Binary Mesajı:
+## Alfabe Tablosu (yardımcı)
 
 ```
-╔══════════════════════════════════════════════════╗
-║                                                  ║
-║  01000010  01010101  01001100  01010101  01010100 ║
-║                                                  ║
-╚══════════════════════════════════════════════════╝
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 ```
 
-## 📝 Görev
+## Görev
 
-Her 8'li binary grubu tabloda bul ve karşılık gelen harfi yaz.
-5 harfi birleştirdiğinde cevabı bulacaksın.
+Şifreli mesajdaki her harfi **3 harf geri** kaydırarak orijinal kelimeyi bul.
 
-> **İpucu:** İlk grup 01000010 — tabloda bul, hangi harf?
-> İkinci grup 01010101 — bu hangi harf? Devam et...
+```
+D → 3 geri → D...C...B...?
+Q → 3 geri → Q...P...O...?
+D → 3 geri → ?
+K → 3 geri → ?
+W → 3 geri → ?
+D → 3 geri → ?
+U → 3 geri → ?
+```
 
-## ✏️ Cevabını Yaz
+> İpucu: D'den 3 geri gidersen: D → C → B → A
 
-`cevaplar.py` dosyasını aç ve `vaka6` satırına çözdüğün kelimeyi yaz.
+---
+
+Cevabını `cevaplar.py` dosyasındaki `"vaka6"` anahtarına yaz.

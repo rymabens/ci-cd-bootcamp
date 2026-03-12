@@ -5,12 +5,12 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from cevaplar import cevaplar
 
 # ╔══════════════════════════════════════════════════════════╗
-# ║  🔍 KAYIP YAZILIMCININ ŞİFRESİ — TEST DOSYASI           ║
-# ║                                                           ║
-# ║  ⚠️  BU DOSYAYI DEĞİŞTİRMEYİN!                          ║
-# ║  📝  Sadece cevaplar.py dosyasını düzenleyin.             ║
-# ║                                                           ║
-# ║  Her doğru cevap, Ada'nın mesajından bir kelime açar.     ║
+# ║  🌀 NEXUS PORTAL SERÜVENİ — TEST DOSYASI               ║
+# ║                                                          ║
+# ║  ⚠️  BU DOSYAYI DEĞİŞTİRMEYİN!                         ║
+# ║  📝  Sadece cevaplar.py dosyasını düzenleyin.            ║
+# ║                                                          ║
+# ║  Her doğru cevap, Kübra'nın mesajından bir kelime açar.  ║
 # ╚══════════════════════════════════════════════════════════╝
 
 
@@ -36,104 +36,104 @@ def n(s):
 
 
 # ─────────────────────────────────────
-# 📁 VAKA 1 — Ayna Yazısı
+# 🌀 PORTAL 1 — Hoşgeldin Portalı
 # ─────────────────────────────────────
-class TestVaka1AynaYazisi:
-    def test_ters_yazi_cozuldu_mu(self):
+class TestPortal1HosgeldinPortali:
+    def test_ayna_yazisi_cozuldu_mu(self):
         assert n(cevaplar["vaka1"]) == "merhaba"
-        print('\n    🟢 Vaka 1 ÇÖZÜLDÜ! Ada\'nın mesajından kelime 1: "Kodlamak"\n')
+        print('\n    🌀 Portal 1 açıldı! Gizli kelime: "Her"\n')
 
 
 # ─────────────────────────────────────
-# 📁 VAKA 2 — Sayı Alfabesi
+# 🌀 PORTAL 2 — Sayı Matrisi
 # ─────────────────────────────────────
-class TestVaka2SayiAlfabesi:
-    def test_sayi_sifresi_cozuldu_mu(self):
-        assert n(cevaplar["vaka2"]) == "ada"
-        print('\n    🟢 Vaka 2 ÇÖZÜLDÜ! Ada\'nın mesajından kelime 2: "bir"\n')
+class TestPortal2SayiMatrisi:
+    def test_matris_cozuldu_mu(self):
+        assert n(cevaplar["vaka2"]) == "alku"
+        print('\n    🌀 Portal 2 açıldı! Gizli kelime: "büyük"\n')
 
 
 # ─────────────────────────────────────
-# 📁 VAKA 3 — Sezar'ın Mirası
+# 🌀 PORTAL 3 — Makinelerin Dili
 # ─────────────────────────────────────
-class TestVaka3SezarinMirasi:
-    def test_sezar_sifresi_cozuldu_mu(self):
-        assert n(cevaplar["vaka3"]) == "github"
-        print('\n    🟢 Vaka 3 ÇÖZÜLDÜ! Ada\'nın mesajından kelime 3: "süper"\n')
+class TestPortal3MakinelerinDili:
+    def test_binary_cozuldu_mu(self):
+        assert n(cevaplar["vaka3"]) == "cesaret"
+        print('\n    🌀 Portal 3 açıldı! Gizli kelime: "yolculuk"\n')
 
 
 # ─────────────────────────────────────
-# 📁 VAKA 4 — Görünmez Dosya
+# 🌀 PORTAL 4 — Gizli Portal
 # ─────────────────────────────────────
-class TestVaka4GorunmezDosya:
+class TestPortal4GizliPortal:
     def test_gizli_dosya_bulundu_mu(self):
-        assert n(cevaplar["vaka4"]) == "liman"
-        print('\n    🟢 Vaka 4 ÇÖZÜLDÜ! Ada\'nın mesajından kelime 4: "güç"\n')
+        assert n(cevaplar["vaka4"]) == "evren"
+        print('\n    🌀 Portal 4 açıldı! Gizli kelime: "küçük"\n')
 
 
 # ─────────────────────────────────────
-# 📁 VAKA 5 — Üç Şüpheli
+# 🌀 PORTAL 5 — Koordinat Haritası
 # ─────────────────────────────────────
-class TestVaka5UcSupheli:
-    def test_dogru_supheli_bulundu_mu(self):
-        assert n(cevaplar["vaka5"]) == "defne"
-        print('\n    🟢 Vaka 5 ÇÖZÜLDÜ! Ada\'nın mesajından kelime 5: "değil"\n')
-
-
-# ─────────────────────────────────────
-# 📁 VAKA 6 — Makinelerin Dili
-# ─────────────────────────────────────
-class TestVaka6MakinelerinDili:
-    def test_binary_kod_cozuldu_mu(self):
-        assert n(cevaplar["vaka6"]) == "bulut"
-        print('\n    🟢 Vaka 6 ÇÖZÜLDÜ! Ada\'nın mesajından kelime 6: "ama"\n')
-
-
-# ─────────────────────────────────────
-# 📁 VAKA 7 — Şiirin Sırrı
-# ─────────────────────────────────────
-class TestVaka7SiirinSirri:
-    def test_akrostis_cozuldu_mu(self):
-        assert n(cevaplar["vaka7"]) == "yazilim"
-        print('\n    🟢 Vaka 7 ÇÖZÜLDÜ! Ada\'nın mesajından kelime 7: "en"\n')
-
-
-# ─────────────────────────────────────
-# 📁 VAKA 8 — Hazine Haritası
-# ─────────────────────────────────────
-class TestVaka8HazineHaritasi:
+class TestPortal5KoordinatHaritasi:
     def test_koordinatlar_cozuldu_mu(self):
-        assert n(cevaplar["vaka8"]) == "sifre"
-        print('\n    🟢 Vaka 8 ÇÖZÜLDÜ! Ada\'nın mesajından kelime 8: "yakın"\n')
+        assert n(cevaplar["vaka5"]) == "rota"
+        print('\n    🌀 Portal 5 açıldı! Gizli kelime: "bir"\n')
 
 
 # ─────────────────────────────────────
-# 📁 VAKA 9 — Bip Bip Biiiip
+# 🌀 PORTAL 6 — Sezar'ın Portalı
 # ─────────────────────────────────────
-class TestVaka9BipBipBiiiip:
+class TestPortal6SezarinPortali:
+    def test_sezar_sifresi_cozuldu_mu(self):
+        assert n(cevaplar["vaka6"]) == "anahtar"
+        print('\n    🌀 Portal 6 açıldı! Gizli kelime: "adımla"\n')
+
+
+# ─────────────────────────────────────
+# 🌀 PORTAL 7 — Şiirin Portalı
+# ─────────────────────────────────────
+class TestPortal7SiirinPortali:
+    def test_akrostis_cozuldu_mu(self):
+        assert n(cevaplar["vaka7"]) == "labirent"
+        print('\n    🌀 Portal 7 açıldı! Gizli kelime: "başlar"\n')
+
+
+# ─────────────────────────────────────
+# 🌀 PORTAL 8 — Mors Sinyalleri
+# ─────────────────────────────────────
+class TestPortal8MorsSinyalleri:
     def test_mors_kodu_cozuldu_mu(self):
-        assert n(cevaplar["vaka9"]) == "hazir"
-        print('\n    🟢 Vaka 9 ÇÖZÜLDÜ! Ada\'nın mesajından kelime 9: "şey"\n')
+        assert n(cevaplar["vaka8"]) == "arayis"
+        print('\n    🌀 Portal 8 açıldı! Gizli kelime: "NEXUS"\n')
 
 
 # ─────────────────────────────────────
-# 📁 VAKA 10 — Son Kilit
+# 🌀 PORTAL 9 — Mantık Kapısı
 # ─────────────────────────────────────
-class TestVaka10SonKilit:
-    def test_son_sifre_cozuldu_mu(self):
-        assert n(cevaplar["vaka10"]) == "muhendis"
+class TestPortal9MantikKapisi:
+    def test_mantik_bulmacasi_cozuldu_mu(self):
+        assert n(cevaplar["vaka9"]) == "rehber"
+        print('\n    🌀 Portal 9 açıldı! Gizli kelime: "seninle"\n')
+
+
+# ─────────────────────────────────────
+# 🌀 PORTAL 10 — Son Portal
+# ─────────────────────────────────────
+class TestPortal10SonPortal:
+    def test_meta_bulmaca_cozuldu_mu(self):
+        assert n(cevaplar["vaka10"]) == "maceralar"
 
         print("\n")
-        print("    ╔═══════════════════════════════════════════════════════╗")
-        print("    ║                                                       ║")
-        print("    ║   🎉 TEBRİKLER! TÜM VAKALARI ÇÖZDÜN!                ║")
-        print("    ║                                                       ║")
-        print('    ║   Ada\'nın Gizli Mesajı:                               ║')
-        print('    ║   "Kodlamak bir süper güç değil,                      ║')
-        print('    ║    ama en yakın şey odur."                            ║')
-        print("    ║                                                       ║")
-        print("    ║   Ada'nın Gerçek Kimliği: MÜHENDİS                   ║")
-        print("    ║                                                       ║")
-        print("    ║   🚀 Pipeline yeşil! Siten deploy ediliyor...         ║")
-        print("    ╚═══════════════════════════════════════════════════════╝")
+        print("    ╔════════════════════════════════════════════════════════════╗")
+        print("    ║                                                            ║")
+        print("    ║   🎉 TEBRİKLER! TÜM PORTALLARI AÇTIN!                     ║")
+        print("    ║                                                            ║")
+        print('    ║   Kübra\'nın Gizli Mesajı:                                  ║')
+        print('    ║   "Her büyük yolculuk küçük bir adımla başlar,             ║')
+        print('    ║    NEXUS seninle büyür."                                    ║')
+        print("    ║                                                            ║")
+        print("    ║   🌟 Kübra'nın aradığı yeni NEXUS'lular... SİZSİNİZ!      ║")
+        print("    ║                                                            ║")
+        print("    ║   🚀 Pipeline yeşil! Siten deploy ediliyor...              ║")
+        print("    ╚════════════════════════════════════════════════════════════╝")
         print("\n")

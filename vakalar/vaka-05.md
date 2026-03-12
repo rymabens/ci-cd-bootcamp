@@ -1,51 +1,47 @@
-# 📁 Vaka 5 — Üç Şüpheli
+# 🌀 Portal 5 — Koordinat Haritası
 
 ```
-Zorluk: ⭐⭐ (Orta)
-Tür:    Mantık bulmacası
+╔════════════════════════════════════════╗
+║  NEXUS Portal Sistemi — Portal 5/10   ║
+║  Tür: Koordinat Tablosu               ║
+╚════════════════════════════════════════╝
 ```
+
+Burak, bu portalın anahtarını bir **harf haritasının** içine gizlemiş.
+Koordinatları takip ederek doğru harfleri bul!
 
 ---
 
-## 📋 Olay
-
-Ada ortadan kaybolmadan önceki gece, ofiste üç kişi daha vardı.
-Güvenlik kamerası bozuktu ama güvenlik görevlisi bazı notlar tutmuş.
-
-Ada ile en son konuşan kişiyi bulmamız gerekiyor.
-
-## 🔎 Kanıt
-
-### Şüpheliler:
+## Portal Haritası
 
 ```
-┌──────────────────────────────────────────┐
-│  👤 KEREM  — Backend Geliştirici         │
-│  👤 DEFNE  — DevOps Mühendisi            │
-│  👤 SELİN  — Proje Yöneticisi            │
-└──────────────────────────────────────────┘
+         Sütun-1   Sütun-2   Sütun-3   Sütun-4   Sütun-5   Sütun-6
+        ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐
+Satır-1 │    M    │    R    │    K    │    D    │    P    │    S    │
+        ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
+Satır-2 │    A    │    E    │    O    │    L    │    İ    │    N    │
+        ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
+Satır-3 │    T    │    U    │    Ç    │    H    │    B    │    Y    │
+        ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
+Satır-4 │    F    │    G    │    Z    │    V    │    Ş    │    C    │
+        └─────────┴─────────┴─────────┴─────────┴─────────┴─────────┘
 ```
 
-### Güvenlik Görevlisinin Notları:
+## Görev
+
+Aşağıdaki koordinatları sırasıyla takip et ve her hücredeki harfi yaz:
 
 ```
-📌 İpucu 1: Ada ile en son konuşan kişi erkek DEĞİLDİR.
-
-📌 İpucu 2: Bu kişinin adı tam 5 harften oluşur.
-
-📌 İpucu 3: Bu kişi, doğrudan kod yazmakla değil,
-            sistemlerin çalışmasını sağlamakla ilgilenir.
+1. harf → Satır-1, Sütun-2
+2. harf → Satır-2, Sütun-3
+3. harf → Satır-3, Sütun-1
+4. harf → Satır-2, Sütun-1
 ```
 
-## 📝 Görev
+4 harfi birleştirdiğinde portalın anahtarını bulacaksın.
 
-İpuçlarını kullanarak eleyerek Ada ile en son konuşan kişiyi bul.
+> İpucu: İlk koordinat (Satır-1, Sütun-2) haritada hangi harfe denk geliyor?
 
-> **Çözüm yolu:**
-> - İpucu 1 kimi eler?
-> - İpucu 2 kimi eler?
-> - İpucu 3 doğrulamak için — kalan kişinin rolü uyuyor mu?
+---
 
-## ✏️ Cevabını Yaz
-
-`cevaplar.py` dosyasını aç ve `vaka5` satırına şüphelinin **adını** yaz.
+Cevabını `cevaplar.py` dosyasındaki `"vaka5"` anahtarına yaz.

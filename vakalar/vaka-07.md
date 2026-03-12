@@ -1,43 +1,64 @@
-# 📁 Vaka 7 — Şiirin Sırrı
+# 🌀 Portal 7 — Şiirin Portalı
 
 ```
-Zorluk: ⭐⭐⭐ (Zor)
-Tür:    Akrostiş (gizli mesajlı şiir)
+╔════════════════════════════════════════╗
+║  NEXUS Portal Sistemi — Portal 7/10   ║
+║  Tür: Akrostiş                        ║
+╚════════════════════════════════════════╝
 ```
+
+Burak, bu portalın anahtarını bir **şiirin içine** gizlemiş.
+Her satırın başında bir sır yatıyor...
 
 ---
 
-## 📋 Olay
+## Akrostiş Nedir?
 
-Ada'nın çekmecesinde el yazısıyla yazılmış bir şiir bulundu.
-İlk bakışta sıradan bir şiir gibi görünüyor. Ancak Ada'nın
-bir alışkanlığı vardı: **mesajlarını satırların içine gizlerdi.**
+Akrostiş, bir şiirde **her satırın ilk harfinin** birleştirilmesiyle
+gizli bir mesaj oluşturma tekniğidir.
 
-## 🔎 Kanıt
+**Örnek:**
+```
+Güneş doğar her sabah          → G
+İnsanlar uyanır yavaşça        → İ
+Taze bir gün başlar             → T
+```
+İlk harfler: **G-İ-T** → GİT
 
-### Ada'nın Şiiri:
+## Kübra'nın Şiiri
 
 ```
-╔══════════════════════════════════════════════╗
-║                                              ║
-║   Yıldızlar altında kod yazardım geceleri,  ║
-║   Algoritma çözerdim kahve eşliğinde,       ║
-║   Zamanın nasıl geçtiğini anlamazdım,       ║
-║   Işığı monitörümden alırdı odamın,         ║
-║   Labirent gibi kodlar arasında kaybolur,   ║
-║   İlham gelince sabaha kadar durmazdım,     ║
-║   Mutluluğu satırların arasında bulurdum.   ║
-║                                              ║
-╚══════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════╗
+║                                                          ║
+║   Lacivert gökyüzünde yıldızlar sessizce parlar,         ║
+║   Adımlarını at, korkma, yol seni çağırır.               ║
+║   Bilinmeyene doğru cesaretle ilerle,                    ║
+║   Işık her zaman karanlığın sonunda belirir.             ║
+║   Rotanı yitirme, pusulan yüreğinde saklı,              ║
+║   Esrarengiz kapılar açılır inançla.                     ║
+║   Nereye gidersen git, ardında iz bırak,                 ║
+║   Tutkuyla yürü, son portala ulaş.                       ║
+║                                                          ║
+╚══════════════════════════════════════════════════════════╝
 ```
 
-## 📝 Görev
+## Görev
 
-Ada'nın şiirinde gizlenmiş kelimeyi bul.
+Şiirdeki **her satırın ilk harfini** sırasıyla yaz ve gizli kelimeyi bul.
 
-> **İpucu:** Her satırın **ilk harfine** dikkatle bak.
-> Yukarıdan aşağıya oku. Bu tekniğe "akrostiş" denir.
+```
+1. satır: "Lacivert..."  → İlk harf: ?
+2. satır: "Adımlarını..." → İlk harf: ?
+3. satır: "Bilinmeyene..." → İlk harf: ?
+4. satır: "Işık..."       → İlk harf: ?
+5. satır: "Rotanı..."     → İlk harf: ?
+6. satır: "Esrarengiz..." → İlk harf: ?
+7. satır: "Nereye..."     → İlk harf: ?
+8. satır: "Tutkuyla..."   → İlk harf: ?
+```
 
-## ✏️ Cevabını Yaz
+> İpucu: 8 satır = 8 harf.
 
-`cevaplar.py` dosyasını aç ve `vaka7` satırına gizli kelimeyi yaz.
+---
+
+Cevabını `cevaplar.py` dosyasındaki `"vaka7"` anahtarına yaz.

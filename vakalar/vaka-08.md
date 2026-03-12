@@ -1,57 +1,69 @@
-# 📁 Vaka 8 — Hazine Haritası
-
-```
-Zorluk: ⭐⭐⭐ (Zor)
-Tür:    Koordinat tablosu
-```
-
----
-
-## 📋 Olay
-
-Ada'nın duvarında bir harf tablosu asılıydı. Yanında da küçük bir
-kağıtta koordinatlar yazılıydı. Klasik bir hazine haritası yöntemi:
-tablodaki doğru koordinatları takip ederek gizli kelimeyi bul.
-
-## 🔎 Kanıt
-
-### Ada'nın Harf Tablosu:
-
-```
-         Sütun
-         1    2    3    4    5
-       ┌────┬────┬────┬────┬────┐
-  A    │ K  │ S  │ M  │ P  │ T  │
-       ├────┼────┼────┼────┼────┤
-  B    │ Ö  │ İ  │ D  │ R  │ E  │
-S      ├────┼────┼────┼────┼────┤
-a C    │ A  │ L  │ F  │ N  │ U  │
-t      ├────┼────┼────┼────┼────┤
-ı D    │ H  │ Y  │ O  │ G  │ Z  │
-r      ├────┼────┼────┼────┼────┤
-  E    │ V  │ Ç  │ B  │ J  │ W  │
-       └────┴────┴────┴────┴────┘
-```
-
-### Ada'nın Koordinatları:
+# 🌀 Portal 8 — Mors Sinyalleri
 
 ```
 ╔════════════════════════════════════════╗
-║                                        ║
-║   A2  →  B2  →  C3  →  B4  →  B5      ║
-║                                        ║
+║  NEXUS Portal Sistemi — Portal 8/10   ║
+║  Tür: Mors Kodu                       ║
 ╚════════════════════════════════════════╝
 ```
 
-## 📝 Görev
+Kübra, bu portalın anahtarını **Mors koduyla** göndermiş.
+Bip bip biiiip... Mesajı çözebilir misin?
 
-Her koordinat bir harf verir. Satır harfi (A-E) ve sütun numarası
-(1-5) kesişimindeki harfi bul.
+---
 
-**Örnek:** A2 → A satırı, 2. sütun → **S**
+## Mors Kodu Nedir?
 
-Tüm koordinatları çöz ve harfleri sırayla birleştir.
+Mors kodu, harfleri **kısa (.)** ve **uzun (-)** sinyallerle ifade eder.
+1830'larda icat edilmiş ve yıllarca uzak mesafe iletişimde kullanılmıştır.
 
-## ✏️ Cevabını Yaz
+## Mors Alfabesi
 
-`cevaplar.py` dosyasını aç ve `vaka8` satırına bulduğun kelimeyi yaz.
+```
+╔═══════╦═══════╦═══════╦═══════╦═══════╦═══════╗
+║ A  .- ║ B -...║ C -.-.║ D -.. ║ E .   ║ F ..-.║
+╠═══════╬═══════╬═══════╬═══════╬═══════╬═══════╣
+║ G --. ║ H ....║ I ..  ║ J .---║ K -.- ║ L .-..║
+╠═══════╬═══════╬═══════╬═══════╬═══════╬═══════╣
+║ M --  ║ N -.  ║ O --- ║ P .--.║ Q --.-║ R .-. ║
+╠═══════╬═══════╬═══════╬═══════╬═══════╬═══════╣
+║ S ... ║ T -   ║ U ..- ║ V ...-║ W .-- ║ X -..-║
+╠═══════╬═══════╬═══════╬═══════╬═══════╬═══════╣
+║ Y -.--║ Z --..║       ║       ║       ║       ║
+╚═══════╩═══════╩═══════╩═══════╩═══════╩═══════╝
+```
+
+## Şifreli Sinyal
+
+```
+╔══════════════════════════════════════════════════════╗
+║                                                      ║
+║   .-  /  .-.  /  .-  /  -.--  /  ..  /  ...          ║
+║                                                      ║
+╚══════════════════════════════════════════════════════╝
+```
+
+> Her `/` bir harfin bittiğini gösterir.
+
+## Görev
+
+Yukarıdaki Mors sinyalini, Mors Alfabesi tablosunu kullanarak
+harf harf çöz. 6 sinyal = 6 harf.
+
+```
+1. harf:  .-    → Tabloda bul → ?
+2. harf:  .-.   → Tabloda bul → ?
+3. harf:  .-    → Tabloda bul → ?
+4. harf:  -.--  → Tabloda bul → ?
+5. harf:  ..    → Tabloda bul → ?
+6. harf:  ...   → Tabloda bul → ?
+```
+
+> İpucu: `.-` tabloda hangi harfe karşılık geliyor?
+
+**Not:** Türkçe özel karakterleri (Ş, İ, Ü vb.) yazarken endişelenme,
+sistem otomatik olarak dönüştürür. Standart harflerle yazabilirsin!
+
+---
+
+Cevabını `cevaplar.py` dosyasındaki `"vaka8"` anahtarına yaz.

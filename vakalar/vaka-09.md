@@ -1,64 +1,61 @@
-# 📁 Vaka 9 — Bip Bip Biiiip
+# 🌀 Portal 9 — Mantık Kapısı
 
 ```
-Zorluk: ⭐⭐⭐⭐ (Çok Zor)
-Tür:    Mors kodu çözme
+╔════════════════════════════════════════╗
+║  NEXUS Portal Sistemi — Portal 9/10   ║
+║  Tür: Mantık ve Eleme                 ║
+╚════════════════════════════════════════╝
 ```
+
+Son portalın anahtarını **6 muhafızdan** biri koruyor. İpuçlarını
+kullanarak doğru muhafızı bul!
 
 ---
 
-## 📋 Olay
-
-Ada'nın masasındaki eski bir telsizin hafızasında bir kayıt bulundu.
-Kayıtta kısa ve uzun sinyaller var — bu bir **Mors kodu** mesajı!
-
-## 🔎 Kanıt
-
-### Mors Kodu Tablosu:
+## 6 Muhafız
 
 ```
- A  .-        N  -.
- B  -...      O  ---
- C  -.-.      P  .--.
- D  -..       R  .-.
- E  .         S  ...
- F  ..-.      T  -
- G  --.       U  ..-
- H  ....      V  ...-
- I  ..        Y  -.--
- K  -.-       Z  --..
- L  .-..
- M  --
+╔═══════════╦═══════════╦═══════╦═══════╗
+║  Muhafız  ║  Element  ║  Güç  ║  Yaş  ║
+╠═══════════╬═══════════╬═══════╬═══════╣
+║  REHBER   ║  Su       ║   8   ║  100  ║
+╠═══════════╬═══════════╬═══════╬═══════╣
+║  LIDER    ║  Ateş     ║   5   ║  200  ║
+╠═══════════╬═══════════╬═══════╬═══════╣
+║  USTA     ║  Toprak   ║  10   ║   50  ║
+╠═══════════╬═══════════╬═══════╬═══════╣
+║  KAPTAN   ║  Hava     ║   3   ║  300  ║
+╠═══════════╬═══════════╬═══════╬═══════╣
+║  MENTOR   ║  Işık     ║   7   ║  250  ║
+╠═══════════╬═══════════╬═══════╬═══════╣
+║  HOCA     ║  Gölge    ║   6   ║  180  ║
+╚═══════════╩═══════════╩═══════╩═══════╝
 ```
 
-**Okuma kuralları:**
-- `.` = kısa sinyal (dit)
-- `-` = uzun sinyal (dah)
-- Harfler arasında boşluk var
-- `/` işareti kelimeler arasındaki boşluğu gösterir
+## İpuçları
 
-### Ada'nın Telsiz Kaydı:
+Kübra şu notları bırakmış:
 
 ```
-╔══════════════════════════════════════════════╗
-║                                              ║
-║   ....  .-  --..  ..  .-.                    ║
-║                                              ║
-╚══════════════════════════════════════════════╝
+📌 İpucu 1: "Doğru muhafızın gücü 6'dan büyüktür."
+
+📌 İpucu 2: "Doğru muhafızın yaşı 200'den küçüktür."
+
+📌 İpucu 3: "Doğru muhafızın adı 5 harften fazladır."
 ```
 
-## 📝 Görev
+## Görev
 
-Her sinyal grubunu Mors tablosunda bul ve karşılık gelen harfi yaz.
-5 harfi birleştir.
+Her ipucunu sırasıyla uygulayarak muhafızları ele:
 
-> **Çözüm adımları:**
-> 1. `....` → tabloda bul → ?
-> 2. `.-` → tabloda bul → ?
-> 3. `--..` → tabloda bul → ?
-> 4. `..` → tabloda bul → ?
-> 5. `.-.` → tabloda bul → ?
+**Adım 1:** Güçleri kontrol et — gücü 6'dan büyük olanlar kimler?
+**Adım 2:** Kalan muhafızların yaşlarını kontrol et — yaşı 200'den küçük olanlar?
+**Adım 3:** Kalan muhafızların isim uzunluklarını say — adı 5 harften fazla olan?
 
-## ✏️ Cevabını Yaz
+Geriye kalan tek muhafızın adı, portalın anahtarıdır!
 
-`cevaplar.py` dosyasını aç ve `vaka9` satırına çözdüğün kelimeyi yaz.
+> İpucu: REHBER = 6 harf, USTA = 4 harf, LIDER = 5 harf...
+
+---
+
+Cevabını `cevaplar.py` dosyasındaki `"vaka9"` anahtarına yaz.

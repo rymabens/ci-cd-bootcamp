@@ -1,46 +1,49 @@
-# 🔍 Kayıp Yazılımcının Şifresi
+# 🌀 NEXUS Portal Serüveni
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
-║              B Y T E F O R G E   L A B S                     ║
-║              ─────────────────────────                       ║
-║              GİZLİ  —  DAVA DOSYASI #2026                    ║
+║               A L K Ü   ×   N E X U S                        ║
+║               ─────────────────────────                      ║
+║               PORTAL SERÜVENİ — 2026                         ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
 ## DURUM RAPORU
 
-**Tarih:** Bilinmiyor  
-**Konu:** Kıdemli Geliştirici "Ada" kayıp  
+**Tarih:** Bilinmiyor
+**Konu:** NEXUS topluluğunun geleceği
 **Durum:** AKTİF
 
 ---
 
-ByteForge Labs'ın en yetenekli yazılımcısı **Ada**, bir sabah masasında
-bulunamamıştır. Masası boştu, bilgisayarı açıktı. Ekranda tek bir mesaj
-vardı:
+ALKÜ'nün en parlak mühendislerinden **Kübra**, NEXUS topluluğunun kurucusu
+ve ilham kaynağıdır. Yıllardır topluluğu ayakta tutan Kübra, bu kez farklı
+bir görev üstlenmiştir: **yeni nesil NEXUS'luları bulmak.**
 
-> *"10 ipucunu çözen, gerçeği bulur."*
+Kübra, meslektaşı **Burak** ile birlikte **10 portal** tasarlamıştır.
+Her portal farklı bir beceriyi test eder. Portalları geçenler,
+NEXUS topluluğunun yeni üyeleri olmaya hak kazanır.
 
-Ada, şirketten ayrılmadan önce son projesinin deposuna **10 şifreli
-ipucu** gizlemiştir. Her ipucu farklı bir yöntemle şifrelenmiştir.
+> *"10 portalı geçen, NEXUS'un kapısını açar."*
+> — Kübra
 
 **Senin görevin:**
-1. `vakalar/` klasöründeki her vakayı aç ve bulmacayı çöz
+1. `vakalar/` klasöründeki her portalı aç ve bulmacayı çöz
 2. Bulduğun cevabı `cevaplar.py` dosyasına yaz
-3. `git add . && git commit -m "Vaka X çözüldü" && git push`
+3. `git add cevaplar.py && git commit -m "Portal X" && git push`
 4. GitHub Actions sekmesinden sonucu kontrol et
-5. Tüm vakalar çözüldüğünde Ada'nın mesajı ortaya çıkar ve siten deploy olur!
+5. Tüm portallar açıldığında Kübra'nın gizli mesajı ortaya çıkar ve siten deploy olur!
 
 ---
 
 **⚠️ ÖNEMLİ:** Kod yazmana gerek yok! Sadece bulmacaları çöz ve
 cevapları `cevaplar.py` dosyasına yaz.
 
-**Vakaları sırayla çözmek zorunda değilsin** — istediğinden başlayabilirsin.
+**Portalları sırayla geçmek zorunda değilsin** — istediğinden başlayabilirsin.
+(Ama Portal 10 için diğerlerini çözmüş olmalısın.)
 
-İlk vaka için: [`vakalar/vaka-01.md`](vakalar/vaka-01.md) dosyasını aç.
+İlk portal için: [`vakalar/vaka-01.md`](vaka-01.md) dosyasını aç.
 
-İyi şanslar, dedektif. 🕵️
+Bol şans, genç NEXUS'lu! 🌀

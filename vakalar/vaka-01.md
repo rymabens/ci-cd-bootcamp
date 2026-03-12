@@ -1,41 +1,37 @@
-# 📁 Vaka 1 — Ayna Yazısı
+# 🌀 Portal 1 — Hoşgeldin Portalı
 
 ```
-Zorluk: ⭐ (Kolay)
-Tür:    Ters okuma
+╔════════════════════════════════════════╗
+║  NEXUS Portal Sistemi — Portal 1/10   ║
+║  Tür: Ayna Yazısı                     ║
+╚════════════════════════════════════════╝
 ```
+
+Kübra, ilk portala bir hoşgeldin mesajı bırakmış. Ama mesaj
+ayna yazısıyla şifrelenmiş — yani tersten yazılmış!
 
 ---
 
-## 📋 Olay
-
-Ada'nın masasında küçük bir ayna bulundu. Aynanın arkasına bir not
-yapıştırılmış. Ancak not, aynaya bakılarak yazılmış gibi —
-tüm harfler tersten sıralanmış.
-
-## 🔎 Kanıt
-
-Ada'nın notu:
+## Şifreli Mesaj
 
 ```
-╔════════════════════════════════════╗
-║                                    ║
-║         A B A H R E M              ║
-║                                    ║
-╚════════════════════════════════════╝
+╔══════════════════════════════════╗
+║                                  ║
+║        A B A H R E M             ║
+║                                  ║
+╚══════════════════════════════════╝
 ```
 
-## 📝 Görev
+## Görev
 
-Bu harfleri doğru sıraya koyarak Ada'nın yazdığı kelimeyi bul.
+Bu harfleri **sondan başa** okuyarak Kübra'nın hoşgeldin mesajını bul.
 
-> **İpucu:** Harfleri sondan başa doğru oku.
+> İpucu: Son harften başla, ilk harfe doğru ilerle.
 
-## ✏️ Cevabını Yaz
+---
 
-`cevaplar.py` dosyasını aç ve `vaka1` satırına cevabını yaz.
+Cevabını `cevaplar.py` dosyasındaki `"vaka1"` anahtarına yaz.
 
-Sonra:
 ```bash
-git add . && git commit -m "Vaka 1 çözüldü" && git push
+git add cevaplar.py && git commit -m "Portal 1 açıldı" && git push
 ```

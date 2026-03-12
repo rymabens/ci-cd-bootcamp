@@ -1,53 +1,53 @@
 # ╔════════════════════════════════════════════════════════════╗
-# ║  🔍 KAYIP YAZILIMCININ ŞİFRESİ — CEVAP KARTI              ║
-# ║                                                             ║
-# ║  Her vakayı çözdükten sonra cevabını aşağıya yaz.           ║
-# ║  Sonra kaydet, commit et ve push yap!                       ║
-# ║                                                             ║
-# ║  ⚠️  Sadece "___" kısımlarını değiştir!                     ║
-# ║  ⚠️  Tırnak işaretlerini silme!                             ║
+# ║  🌀 NEXUS PORTAL SERÜVENİ — CEVAP KARTI                  ║
+# ║                                                            ║
+# ║  Her portalın cevabını ilgili anahtara yaz.                ║
+# ║  Sonra kaydet, commit et ve push yap!                      ║
+# ║                                                            ║
+# ║  ⚠️  Sadece "" kısımlarını değiştir!                       ║
+# ║  ⚠️  Tırnak işaretlerini silme!                            ║
 # ╚════════════════════════════════════════════════════════════╝
 
 cevaplar = {
 
-    # 📁 Vaka 1 — Ayna Yazısı
+    # 🌀 Portal 1 — Hoşgeldin Portalı
     # İpucu: vakalar/vaka-01.md dosyasını oku
-    "vaka1": "MERHABA",
+    "vaka1": "",
 
-    # 📁 Vaka 2 — Sayı Alfabesi
+    # 🌀 Portal 2 — Sayı Matrisi
     # İpucu: vakalar/vaka-02.md dosyasını oku
-    "vaka2": "ADA",
+    "vaka2": "",
 
-    # 📁 Vaka 3 — Sezar'ın Mirası
+    # 🌀 Portal 3 — Makinelerin Dili
     # İpucu: vakalar/vaka-03.md dosyasını oku
-    "vaka3": "GITHUB",
+    "vaka3": "",
 
-    # 📁 Vaka 4 — Görünmez Dosya
+    # 🌀 Portal 4 — Gizli Portal
     # İpucu: vakalar/vaka-04.md dosyasını oku
-    "vaka4": "LIMAN",
+    "vaka4": "",
 
-    # 📁 Vaka 5 — Üç Şüpheli
+    # 🌀 Portal 5 — Koordinat Haritası
     # İpucu: vakalar/vaka-05.md dosyasını oku
-    "vaka5": "DEFNE",
+    "vaka5": "",
 
-    # 📁 Vaka 6 — Makinelerin Dili
+    # 🌀 Portal 6 — Sezar'ın Portalı
     # İpucu: vakalar/vaka-06.md dosyasını oku
-    "vaka6": "BULUT",
+    "vaka6": "",
 
-    # 📁 Vaka 7 — Şiirin Sırrı
+    # 🌀 Portal 7 — Şiirin Portalı
     # İpucu: vakalar/vaka-07.md dosyasını oku
-    "vaka7": "YAZILIM",
+    "vaka7": "",
 
-    # 📁 Vaka 8 — Hazine Haritası
+    # 🌀 Portal 8 — Mors Sinyalleri
     # İpucu: vakalar/vaka-08.md dosyasını oku
-    "vaka8": "SIFRE",
+    "vaka8": "",
 
-    # 📁 Vaka 9 — Bip Bip Biiiip
+    # 🌀 Portal 9 — Mantık Kapısı
     # İpucu: vakalar/vaka-09.md dosyasını oku
-    "vaka9": "HAZIR",
+    "vaka9": "",
 
-    # 📁 Vaka 10 — Son Kilit
+    # 🌀 Portal 10 — Son Portal
     # İpucu: vakalar/vaka-10.md dosyasını oku
-    "vaka10": "MUHENDIS",
+    "vaka10": "",
 
 }
