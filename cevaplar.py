@@ -14,7 +14,7 @@ cevaplar = {
     "vaka1": "merhaba",
 
     # 🌀 Portal 2 — Sayı Matrisi (Serhat)
-    "vaka2": "",
+    "vaka2": "alku",
 
     # 🌀 Portal 3 — Makinelerin Dili (Mehmet)
     "vaka3": "",
