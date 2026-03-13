@@ -20,7 +20,7 @@ cevaplar = {
     "vaka3": "cesaret",
 
     # 🌀 Portal 4 — Gizli Portal (Okan)
-    "vaka4": "",
+    "vaka4": "EVREN",
 
     # 🌀 Portal 5 — Koordinat Haritası (Nigina)
     "vaka5": "",
