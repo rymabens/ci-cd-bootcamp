@@ -23,7 +23,7 @@ cevaplar = {
     "vaka4": "EVREN",
 
     # 🌀 Portal 5 — Koordinat Haritası (Nigina)
-    "vaka5": "",
+    "vaka5": "rota",
 
     # 🌀 Portal 6 — İrem'in Şifre Kasası (İrem)
     "vaka6": "",
